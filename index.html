@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>Film finder</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row height d-flex justify-content-center align-items-center">
+      <div class="col-md-8">
+        <h1>FilmFinder</h1>
+        <form id="form" class="search"> 
+          <i class="fa fa-search"></i> 
+          <input type="text" id="searchInput" class="form-control" placeholder="Search..."> 
+          <button class="btn btn-primary">Search</button> 
+        </form>
+      </div>
+
+      <div class="movies">
+        <div class="movie card flex-row">
+          <img class="card-img-left" src="https://tinypng.com/images/social/website.jpg"/>
+          <div class="card-body">
+            <h4 class="card-title h5 h4-sm">
+              Left image
+            </h4>
+            <p class="card-text">
+              Example text
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+    
+  <div id="containerApi" class="container">
+    <div class="movies">
+
+    </div>
+  </div>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
