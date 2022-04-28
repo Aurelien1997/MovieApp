@@ -17,7 +17,7 @@ fetch(`https://www.omdbapi.com/?s=${i}&plot=full&apikey=69d24a2a`).then((data) =
   let data1 = "";
   data.Search.map((values)=>{
     data1 = `
-    <div class="movies">
+    <div class="movies p-3">
       <div id="movieApi" class="movie card flex-row">
         <img class="card-img-left" src="${values.Poster}"/>
         <div class="card-body">
