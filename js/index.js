@@ -78,6 +78,3 @@ const details = (id) => {
       console.log(err)
   })
 }
-/*
-details(movieId);
-details("tt0096895");*/
