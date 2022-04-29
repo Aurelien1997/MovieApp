@@ -1,7 +1,7 @@
-
 const form = document.getElementById('form');
 const apikey = "69d24a2a";
 let test1;
+let info = document.getElementById("test");
 
 form.addEventListener('submit', (e) =>{
   e.preventDefault()
@@ -28,25 +28,28 @@ const getMovies = async (i) => {
             <div class="body">
               <p class="text-info">${values.Year}</p>
               <button class="test1 btn btn-primary" id=${values.imdbID}>info</button>
-              <p>${values.imdbID}</p>
+              <p class="text-right">${values.imdbID}</p>
             </div>
           </div>
         </div>
       </div>`
       details(values.imdbID);
       document.getElementById("containerApi").innerHTML += data1;
-
-          });
-          test1 = document.querySelectorAll('.test1');
+    });
+    test1 = document.querySelectorAll('.test1');
   }).catch((err)=>{
       console.log(err)
   })
 }
-
 window.addEventListener('click', (e) => {
   if(e.target.classList.contains("test1")){
     details(e.target.id);
-  }
+    if (info.style.display === "none") {
+      info.style.display = "block";
+    }
+  } else {
+      info.style.display = "none";
+    }
 })
 
 const details = (id) => {
@@ -78,3 +81,4 @@ const details = (id) => {
       console.log(err)
   })
 }
+
