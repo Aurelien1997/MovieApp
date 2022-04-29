@@ -50,4 +50,13 @@ p{
     transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 1124px) {
+    .info {
+      font-size: 0.5em;
+    }
+    #movieInfo{
+        display: block;
+        width: 350px;
+    }
+  }
 

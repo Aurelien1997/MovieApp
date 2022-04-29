@@ -62,7 +62,7 @@ const details = (id) => {
     let data2 = "";
     data2 = `
     <div class="movies p-3">
-      <div id="movieApi" class="movie card flex-row">
+      <div id="movieInfo" class="movie card flex-row">
         <img class="card-img-left" src="${movie.Poster}"/>
         <div class="card-body">
           <div class="header">
