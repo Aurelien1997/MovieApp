@@ -1,7 +1,6 @@
-
-body {
-    background-color: #eee;
-    font-weight: 300
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif; 
 }
 
 .search {
@@ -10,6 +9,7 @@ body {
 }
 
 .search input {
+    font-size: 1.5rem;
     height: 60px;
     text-indent: 25px;
     border: 2px solid #d6d4d4
@@ -36,4 +36,8 @@ body {
 
 .movie img {
     max-height: 250px;
-  }
+}
+
+p{
+    font-size: 1.5em;
+}
